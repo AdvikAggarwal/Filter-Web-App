@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Filter Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+
+      <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Modak&family=Monofett&family=Righteous&family=Sigmar+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h1 id="filter">Filter Web App</h1>
+            <h3 id="here_is">Try the following two filters!-</h3>
+            <span>
+                <img id="filter_icon1" src="Moustache.png" onclick="moustache();">
+            </span>
+            <span>
+                <img id="filter_icon2" src="Lipstick.png" onclick="lipstick();">
+            </span>
+            <br>
+            <br>
+            <div class="filter_box"></div>
+            <br>
+            <input placeholder="Enter The File Name for your image." class="Name" id="file">
+            <br>
+            <br>
+            <button class="save_img" onclick="take_Snapshot();">Save Image</button>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
